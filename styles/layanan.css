@@ -1,0 +1,162 @@
+
+
+body {
+    font-family: "Maison Neue Book";
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @import url(https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book);
+
+/* navbar */
+.navbar {
+    z-index: 8;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    filter: drop-shadow(0 0 5px #fff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+
+
+  
+
+/* footer */
+
+
+footer {
+    margin-top: 160px;
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .logo {
+    width: 210px;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo p {
+    margin-top: 20px;
+  }
+  
+  
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        display: none;
+    }
+  
+    
+  .nav-toggle {
+    display: block;
+  
+  }
+  
+  
+    .nav-links.active {
+        display: flex;
+  
+    }
+  
+    .nav-toggle.active i::before {
+        z-index: 1;
+    }
+  
+    .nav-toggle.active {
+      height: 250px;
+      z-index: 2;
+        color: #fff;
+    }
+  }
+
+
+  
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-links a {
+        margin: 10px 0;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+body.loading {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes logoPulse {
+  0% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logos {
+  margin-right: 10px;
+  animation: logoPulse 1.5s alternate infinite;
+}
+
+/* CSS untuk elemen loading */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0); /* Latar belakang semi-transparan */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Menempatkan di atas konten utama */
+}
+
+.loading-bar {
+  width: 0;
+  height: 4px; /* Atur tinggi loading bar */
+  background-color: #fff; /* Warna loading bar */
+  transition: width 4s linear; /* Durasi loading bar */
+}
