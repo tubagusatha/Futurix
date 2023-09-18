@@ -1,16 +1,12 @@
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 
-
-window.addEventListener('scroll', () => {
-
+window.addEventListener("scroll", () => {
   if (window.scrollY > 2050 && window.scrollY < 4600) {
-    body.classList.add('bodyscroll');
+    body.classList.add("bodyscroll");
   } else {
-    body.classList.remove('bodyscroll');
+    body.classList.remove("bodyscroll");
   }
 });
-
-
 
 // loading
 document.addEventListener("DOMContentLoaded", function () {
@@ -25,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       loadingContainer.remove();
-    }, 1000); 
-  }, 2000); 
+    }, 1000);
+  }, 2000);
 });
 
 function showLoading() {
@@ -42,4 +38,3 @@ showLoading();
 setTimeout(function () {
   hideLoading();
 });
-

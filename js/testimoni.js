@@ -5,29 +5,29 @@ const nextButton = document.querySelector(".next-button");
 let currentIndex = 0;
 
 function updateSlide() {
-    slides.forEach((slide, index) => {
-        if (index === currentIndex) {
-            slide.style.transform = `translateX(0)`;
-        } else {
-            slide.style.transform = `translateX(100%)`;
-        }
-    });
+  slides.forEach((slide, index) => {
+    if (index === currentIndex) {
+      slide.style.transform = `translateX(0)`;
+    } else {
+      slide.style.transform = `translateX(100%)`;
+    }
+  });
 }
 
 function nextSlide() {
-    currentIndex++;
-    if (currentIndex >= slides.length) {
-        currentIndex = 0;
-    }
-    updateSlide();
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  updateSlide();
 }
 
 function prevSlide() {
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    }
-    updateSlide();
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+  updateSlide();
 }
 
 nextButton.addEventListener("click", nextSlide);

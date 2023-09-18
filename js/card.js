@@ -1,12 +1,12 @@
 // script.js
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll(".card");
 let currentCard = 0;
 
 function showNextCard() {
-    cards[currentCard].classList.remove('inactive');
-    currentCard = (currentCard + 1) % cards.length;
-    cards[currentCard].classList.add('inactive');
+  cards[currentCard].classList.remove("inactive");
+  currentCard = (currentCard + 1) % cards.length;
+  cards[currentCard].classList.add("inactive");
 }
 
 // Tampilkan kartu pertama saat halaman dimuat
