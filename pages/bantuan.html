@@ -1,165 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/loading.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/loading.css" />
     <link rel="icon" href="/assets/icons.svg" />
 
-
-    
     <script
       src="https://kit.fontawesome.com/e81773e2de.js"
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="/styles/bantuan.css">
+    <link rel="stylesheet" href="/styles/bantuan.css" />
     <title>Bantuan</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <div class="loading-container">
-        <img class="logos" src="/assets/logo.svg" alt="" srcset="">
-        <div class="loading-bar"></div>
-      </div>
+      <img class="logos" src="/assets/logo.svg" alt="" srcset="" />
+      <div class="loading-bar"></div>
+    </div>
 
     <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="/assets/logo.svg" alt="Logo"></a>
-        </div>
-        <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/index.html" >Home</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a style="color: rgb(144, 206, 51);" href="">Bantuan</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-        </ul>
+      <div class="logo">
+        <a href="#"><img src="/assets/logo.svg" alt="Logo" /></a>
+      </div>
+      <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a style="color: rgb(144, 206, 51)" href="">Bantuan</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
     </nav>
-  
+
     <script>
       function toggleNav() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('active');
-      const navToggle = document.getElementById('navToggle');
-      navToggle.classList.toggle('active');
-  }
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+        const navToggle = document.getElementById("navToggle");
+        navToggle.classList.toggle("active");
+      }
     </script>
-  
 
     <div class="header">
-        <h1 class="mt-5">Cari Bantuan Disini</h1>
-        <p>Temukan jawaban atas pertanyaan Anda</p>
-        <div class="search-container">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Cari pertanyaan Anda">
-                <button class="btn btn-primary" type="button">Cari</button>
-            </div>
+      <h1 class="mt-5">Cari Bantuan Disini</h1>
+      <p>Temukan jawaban atas pertanyaan Anda</p>
+      <div class="search-container">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Cari pertanyaan Anda"
+          />
+          <button class="btn btn-primary" type="button">Cari</button>
         </div>
-    </div>
-    
-    <div class="container faq-container">
-        <h2 class="faq-title">Top FAQ</h2>
-    
-        <!-- FAQ Accordion -->
-        <div class="accordion mt-5" id="faqAccordion">
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faqHeading1">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-                            Bagaimana cara saya menghubungi Anda untuk konsultasi lebih lanjut?
-                        </button>
-                    </h2>
-                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Sertakan informasi kontak atau cara terbaik untuk berkomunikasi dengan Anda.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faqHeading2">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                            Apa jenis layanan yang Anda tawarkan?
-                        </button>
-                    </h2>
-                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Kami menyediakan layanan desain web, pengembangan aplikasi, dan layanan desain.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faqHeading3">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                            Bagaimana saya dapat memesan layanan dari Anda?
-                        </button>
-                    </h2>
-                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Anda dapat menghubungi kami melalui formulir kontak di situs web kami atau mengirim email ke alamat kami untuk melakukan pemesanan.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faqHeading4">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
-                            Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek web?
-                        </button>
-                    </h2>
-                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Waktu yang dibutuhkan untuk menyelesaikan proyek web dapat bervariasi tergantung pada Keinginan Anda. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faqHeading5">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
-                            Apa metode pembayaran yang Anda terima?
-                        </button>
-                    </h2>
-                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Kami menerima pembayaran melalui transfer bank dan metode pembayaran online.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
+    <div class="container faq-container">
+      <h2 class="faq-title">Top FAQ</h2>
+
+      <!-- FAQ Accordion -->
+      <div class="accordion mt-5" id="faqAccordion">
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse1"
+                aria-expanded="true"
+                aria-controls="faqCollapse1"
+              >
+                Bagaimana cara saya menghubungi Anda untuk konsultasi lebih
+                lanjut?
+              </button>
+            </h2>
+            <div
+              id="faqCollapse1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeading1"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sertakan informasi kontak atau cara terbaik untuk berkomunikasi
+                dengan Anda.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse2"
+                aria-expanded="false"
+                aria-controls="faqCollapse2"
+              >
+                Apa jenis layanan yang Anda tawarkan?
+              </button>
+            </h2>
+            <div
+              id="faqCollapse2"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading2"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Kami menyediakan layanan desain web, pengembangan aplikasi, dan
+                layanan desain.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse3"
+                aria-expanded="false"
+                aria-controls="faqCollapse3"
+              >
+                Bagaimana saya dapat memesan layanan dari Anda?
+              </button>
+            </h2>
+            <div
+              id="faqCollapse3"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading3"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Anda dapat menghubungi kami melalui formulir kontak di situs web
+                kami atau mengirim email ke alamat kami untuk melakukan
+                pemesanan.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading4">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse4"
+                aria-expanded="false"
+                aria-controls="faqCollapse4"
+              >
+                Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek
+                web?
+              </button>
+            </h2>
+            <div
+              id="faqCollapse4"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading4"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Waktu yang dibutuhkan untuk menyelesaikan proyek web dapat
+                bervariasi tergantung pada Keinginan Anda.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading5">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse5"
+                aria-expanded="false"
+                aria-controls="faqCollapse5"
+              >
+                Apa metode pembayaran yang Anda terima?
+              </button>
+            </h2>
+            <div
+              id="faqCollapse5"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeading5"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Kami menerima pembayaran melalui transfer bank dan metode
+                pembayaran online.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
-        <div class="footer-logo">
-        <img  src="/assets/logo.svg" alt="Logo" class="logo"> 
+      <div class="footer-logo">
+        <img src="/assets/logo.svg" alt="Logo" class="logo" />
         <p>© 2023 Futurix. Hak Cipta Dilindungi.</p>
       </div>
-    
-        <div class="footer-links">
-            <a href="#">Beranda</a>
-            <a href="pages/Layanan.html">Layanan</a>
-            <a href="pages/bantuan.html">Bantuan</a>
-            <a href="#">Kontak</a>
-        </div>
-    </footer>
 
+      <div class="footer-links">
+        <a href="#">Beranda</a>
+        <a href="pages/Layanan.html">Layanan</a>
+        <a href="pages/bantuan.html">Bantuan</a>
+        <a href="#">Kontak</a>
+      </div>
+    </footer>
 
     <script src="/js/nav.js"></script>
     <script src="/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,175 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/3724ece79a634e7b5168905d01e59a64?family=Maison+Neue+Book"
+      rel="stylesheet"
+    />
     <link rel="icon" href="/assets/icons.svg" />
 
-    
     <script
       src="https://kit.fontawesome.com/e81773e2de.js"
       crossorigin="anonymous"
     ></script>
-    
-    <link rel="stylesheet" href="/styles/layanan.css">
-    <link rel="stylesheet" href="/styles/loading.css">
+
+    <link rel="stylesheet" href="/styles/layanan.css" />
+    <link rel="stylesheet" href="/styles/loading.css" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="loading-container">
-        <img class="logos" src="/assets/logo.svg" alt="" srcset="">
-        <div class="loading-bar"></div>
+      <img class="logos" src="/assets/logo.svg" alt="" srcset="" />
+      <div class="loading-bar"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="/assets/logo.svg" alt="Logo" /></a>
       </div>
-  
-      <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="/assets/logo.svg" alt="Logo"></a>
-        </div>
-        <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/index.html" >Home</a></li>
-            <li><a style="color: rgb(144, 206, 51);" href="#">Layanan</a></li>
-            <li><a href="bantuan.html">Bantuan</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-        </ul>
+      <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a style="color: rgb(144, 206, 51)" href="#">Layanan</a></li>
+        <li><a href="bantuan.html">Bantuan</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
     </nav>
-  
+
     <script>
       function toggleNav() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('active');
-      const navToggle = document.getElementById('navToggle');
-      navToggle.classList.toggle('active');
-  }
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+        const navToggle = document.getElementById("navToggle");
+        navToggle.classList.toggle("active");
+      }
     </script>
 
-<!-- Main Carousel -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/assets/layanan/crsl.svg" class="d-block w-100" alt="freepik">
-        <div class="carousel-caption col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start mb-4">
-          <h1 class="text-dark">Diskon 40%</h1>
-          <p class="text-dark">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nullam vel odio vitae libero <br> bibendum ultricies. Lorem ipsum dolor sit amet,  <br>consectetur adipisicing elit. Maiores, <br>porro pariatur itaque libero iusto veniam consectetur</p>
-          <a href="#" class="btn btn-primary">Selengkapnya</a>
+    <!-- Main Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/assets/layanan/crsl.svg"
+            class="d-block w-100 img-fluid"
+            alt="freepik"
+          />
+          <div
+            class="carousel-caption col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start mb-4"
+          >
+            <h1 class="text-dark">Diskon 40%</h1>
+            <p class="text-dark">
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit. Nullam vel odio vitae libero <br />
+              bibendum ultricies. Lorem ipsum dolor sit amet, <br />consectetur
+              adipisicing elit. Maiores, <br />porro pariatur itaque libero
+              iusto veniam consectetur
+            </p>
+            <a href="#" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/layanan/crsl.svg"
+            class="d-block w-100 img-fluid"
+            alt="freepik"
+          />
+          <div
+            class="carousel-caption col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start mb-4"
+          >
+            <h1 class="text-dark">
+              Tim Ahli Kami Siap <br />
+              Membantu Mu
+            </h1>
+            <p class="text-dark">
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit. Nullam vel odio vitae libero <br />
+              bibendum ultricies. Lorem ipsum dolor sit amet,
+            </p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="/assets/layanan/crsl.svg" class="d-block w-100" alt="freepik">
-        <div class="carousel-caption col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start mb-4">
-          <h1 class="text-dark">Tim Ahli Kami Siap <br> Membantu Mu</h1>
-          <p class="text-dark">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nullam vel odio vitae libero <br> bibendum ultricies. Lorem ipsum dolor sit amet,</p>
-        </div>
+      <a
+        class="carousel-control-prev"
+        href="#mainCarousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-dark m-4"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#mainCarousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-dark p-3"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-dark m-4" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#mainCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
 
-<!-- Card Section -->
-<div class="container mt-5">
-  <div class="row">
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Aplikasi Web</h5>
-          <p class="card-text">Kami menyediakan layanan pembuatan aplikasi web yang dapat disesuaikan dengan kebutuhan bisnis Anda. Aplikasi web modern dan responsif untuk meningkatkan kehadiran online Anda.</p>
+    <!-- Card Section -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Aplikasi Web</h5>
+              <p class="card-text">
+                Kami menyediakan layanan pembuatan aplikasi web yang dapat
+                disesuaikan dengan kebutuhan bisnis Anda. Aplikasi web modern
+                dan responsif untuk meningkatkan kehadiran online Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Desain Poster</h5>
+              <p class="card-text">
+                Dengan tim desain kreatif kami, kami membuat poster yang menarik
+                dan informatif untuk mempromosikan produk atau acara Anda.
+                Desain yang profesional untuk pesan yang kuat.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Desain Poster</h5>
-          <p class="card-text">Dengan tim desain kreatif kami, kami membuat poster yang menarik dan informatif untuk mempromosikan produk atau acara Anda. Desain yang profesional untuk pesan yang kuat.</p>
+    <div class="container mt-5">
+      <h2>3 Orang Terpopuler Saat Ini</h2>
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              class="rounded-Image"
+              src="/assets/layanan/budiman.svg"
+              alt="Deskripsi Gambar"
+              width="140"
+              height="140"
+            />
+          </div>
+          <h4 class="fw-normal text-center">Budiman</h4>
+          <p class="text-center">Web designer</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href=""
+              ><p class="btn btn-secondary text-center">Selengkapnya</p></a
+            >
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              class="rounded-Image"
+              src="/assets/layanan/annisa.svg"
+              alt="Deskripsi Gambar"
+              width="140"
+              height="140"
+            />
+          </div>
+          <h4 class="fw-normal text-center">Annisa Putri</h4>
+          <p class="text-center">Designer</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href=""
+              ><p class="btn btn-secondary text-center">Selengkapnya</p></a
+            >
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              class="rounded-Image"
+              src="/assets/layanan/andrian.svg"
+              alt="Deskripsi Gambar"
+              width="140"
+              height="140"
+            />
+          </div>
+          <h4 class="fw-normal text-center">Andrian</h4>
+          <p class="text-center">Android</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href=""
+              ><p class="btn btn-secondary text-center">Selengkapnya</p></a
+            >
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+    </div>
+
+    <!-- Konten Tambahan -->
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5 mt-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+            Peracayakan Semua Pada Kami
+          </h1>
+          <p class="col-lg-10 fs-4">
+            Pengen Coba Sekarang, Pesan Sekarang Juga
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            Pesan Sekarang Juga
+          </button>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="container mt-5">
-    <h2>3 Orang Terpopuler Saat Ini</h2>
-    <div class="row mt-5">
-      <div class="col-lg-4">
-        <div class="d-flex justify-content-center align-items-center">
-          <img class="rounded-Image" src="/assets/layanan/budiman.svg" alt="Deskripsi Gambar" width="140" height="140">
-        </div>
-        <h4 class="fw-normal text-center">Budiman</h4>
-        <p class="text-center">Web designer</p>
-        <div class="d-flex justify-content-center align-items-center">
-        <a href=""><p class="btn btn-secondary text-center">Selengkapnya</p></a>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="/assets/logo.svg" alt="Logo" class="logo" />
+        <p>© 2023 Futurix. Hak Cipta Dilindungi.</p>
       </div>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <div class="d-flex justify-content-center align-items-center">
-          <img class="rounded-Image" src="/assets/layanan/annisa.svg" alt="Deskripsi Gambar" width="140" height="140">
-        </div>
-        <h4 class="fw-normal text-center">Annisa Putri</h4>
-        <p class="text-center">Designer</p>
-        <div class="d-flex justify-content-center align-items-center">
-        <a href=""><p class="btn btn-secondary text-center">Selengkapnya</p></a>
+
+      <div class="footer-links">
+        <a href="#">Beranda</a>
+        <a href="pages/Layanan.html">Layanan</a>
+        <a href="pages/bantuan.html">Bantuan</a>
+        <a href="#">Kontak</a>
       </div>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <div class="d-flex justify-content-center align-items-center">
-          <img class="rounded-Image" src="/assets/layanan/andrian.svg" alt="Deskripsi Gambar" width="140" height="140">
-        </div>
-        <h4 class="fw-normal text-center">Andrian</h4>
-        <p class="text-center">Android</p>
-        <div class="d-flex justify-content-center align-items-center">
-        <a href=""><p class="btn btn-secondary text-center">Selengkapnya</p></a>
-      </div>
-      </div><!-- /.col-lg-4 -->
-    </div>
-  </div>
+    </footer>
 
-<!-- Konten Tambahan -->
-<div class="container col-xl-10 col-xxl-8 px-4 py-5 mt-5">
-  <div class="row align-items-center g-lg-5 py-5">
-    <div class="col-lg-7 text-center text-lg-start">
-      <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Peracayakan Semua Pada Kami</h1>
-      <p class="col-lg-10 fs-4">Pengen Coba Sekarang, Pesan Sekarang Juga</p>
-    </div>
-    <div class="col-md-10 mx-auto col-lg-5">
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Pesan Sekarang Juga</button>
+    <!-- Bootstrap JS (wajib) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-    </div>
-  </div>
-</div>
-
-
-
-<footer>
-  <div class="footer-logo">
-  <img  src="/assets/logo.svg" alt="Logo" class="logo"> 
-  <p>© 2023 Futurix. Hak Cipta Dilindungi.</p>
-</div>
-
-  <div class="footer-links">
-      <a href="#">Beranda</a>
-      <a href="pages/Layanan.html">Layanan</a>
-      <a href="pages/bantuan.html">Bantuan</a>
-      <a href="#">Kontak</a>
-  </div>
-</footer>
-
-
-<!-- Bootstrap JS (wajib) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<script src="/js/main.js"></script>
-</body>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
